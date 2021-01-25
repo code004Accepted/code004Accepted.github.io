@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ender&#39;s Blog</title>
+  <icon>http://code004accepted.github.io/icon.png</icon>
+  <subtitle>Pushing to the limit</subtitle>
+  <link href="http://code004accepted.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://code004accepted.github.io/"/>
+  <updated>2021-01-25T15:07:29.900Z</updated>
+  <id>http://code004accepted.github.io/</id>
+  
+  <author>
+    <name>Ender</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Happy New Year</title>
+    <link href="http://code004accepted.github.io/2021/happy-new-year-2021/"/>
+    <id>http://code004accepted.github.io/2021/happy-new-year-2021/</id>
+    <published>2021-01-25T15:07:29.900Z</published>
+    <updated>2021-01-25T15:07:29.900Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;The year 2020, in all respects, is a tough year.&lt;/p&gt;
+&lt;p&gt;This year, changes have taken place in both national and international</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
+    <link href="http://code004accepted.github.io/2021/test/"/>
+    <id>http://code004accepted.github.io/2021/test/</id>
+    <published>2021-01-25T15:07:29.900Z</published>
+    <updated>2021-01-25T15:07:29.900Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;测试&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;测试&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;测试&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;测试&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于旧博客文章的版权问题</title>
+    <link href="http://code004accepted.github.io/2020/about-former-posts/"/>
+    <id>http://code004accepted.github.io/2020/about-former-posts/</id>
+    <published>2020-11-22T10:40:34.000Z</published>
+    <updated>2021-01-25T15:07:29.896Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;旧博客中版权声明如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;允许不超过文章30%字数的摘录，但请在醒目位置附上原文链接及作者。未经许可禁止任何形式的全文转载。禁止发布任何基于本文的再创作。复制本站任何内容即代表您已阅读、同意并保证遵守以上规则。&lt;/p&gt;
+&lt;/blockq</summary>
+        
+      
+    
+    
+    
+    <category term="公告" scheme="http://code004accepted.github.io/categories/%E5%85%AC%E5%91%8A/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于旧博客</title>
+    <link href="http://code004accepted.github.io/2020/about-the-former-blog/"/>
+    <id>http://code004accepted.github.io/2020/about-the-former-blog/</id>
+    <published>2020-11-07T10:17:35.000Z</published>
+    <updated>2021-01-25T15:07:29.896Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本博客目前暂时使用原博客的域名&lt;code&gt;code004.cf&lt;/code&gt;，此博客完善后会购买新域名&lt;/p&gt;
+&lt;p&gt;旧博客采用Hexo(theme Fluid)搭建，并由Github Pages &amp;amp; Coding Pages提供静态网页部署服务。入口：&lt;a href=&quot;https://old.code004.cf/&quot;&gt;https://old.code004.cf/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该博客将不再更新，且原文章也不会被放置至此博客。当&lt;code&gt;code004.cf&lt;/code&gt;域名到期后（约2021年3月），您将仍可以通过 &lt;a href=&quot;https://ed7cu5.coding-pages.com&quot;&gt;https://ed7cu5.coding-pages.com&lt;/a&gt; 或 &lt;a href=&quot;https://16w45d.coding-pages.com&quot;&gt;https://16w45d.coding-pages.com&lt;/a&gt; 访问原博客&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="公告" scheme="http://code004accepted.github.io/categories/%E5%85%AC%E5%91%8A/"/>
+    
+    
+  </entry>
+  
+</feed>

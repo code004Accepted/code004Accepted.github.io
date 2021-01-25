@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Happy New Year</title>
+      <link href="2021/happy-new-year-2021/"/>
+      <url>2021/happy-new-year-2021/</url>
+      
+        <content type="html"><![CDATA[<p>The year 2020, in all respects, is a tough year.</p><p>This year, changes have taken place in both national and international situations,</p><p>leaving millions of people homeless, hungry, or even dead.</p><p>However, I believe, that everything will revive.</p><p>Flowers will bloom again.</p><p>Rivers will flow again.</p><p>And you and me will be together again.</p><p>So hold on to it,</p><p>cross difficulties,</p><p>realize dreams,</p><p>achieve the impossible.</p><p>And only then,</p><p>when the mission is finished,</p><p>may we party together,</p><p>and wish each other,</p><p>a <strong>Happy New Year</strong>.</p><p>Brian “Ender” Chen</p><p>1st Jan. 2021</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试</title>
+      <link href="2021/test/"/>
+      <url>2021/test/</url>
+      
+        <content type="html"><![CDATA[<p>测试</p><p><em>测试</em></p><p><strong>测试</strong></p><p><strong><em>测试</em></strong></p><p><a href="https://google.com">测试</a></p><blockquote><p>测试</p></blockquote><div class="note success">note success</div><div class="note warning">note warning</div><div class="note danger">note danger</div><div class="note info">note info</div><div class="note primary">note primary</div><div class="note default">note default(=primary)</div>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于旧博客文章的版权问题</title>
+      <link href="2020/about-former-posts/"/>
+      <url>2020/about-former-posts/</url>
+      
+        <content type="html"><![CDATA[<p>旧博客中版权声明如下：</p><blockquote><p>允许不超过文章30%字数的摘录，但请在醒目位置附上原文链接及作者。未经许可禁止任何形式的全文转载。禁止发布任何基于本文的再创作。复制本站任何内容即代表您已阅读、同意并保证遵守以上规则。</p></blockquote><p>而文末又注明依据<code>CC BY-NC-ND 4.0</code>协议授权。</p><p>此二版权声明自相矛盾，因此根据CreativeCommons的规定，前者不再具有法律效力（即可以随意打破），但读者仍需遵守<code>CC BY-NC-ND 4.0</code>协议。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 公告 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于旧博客</title>
+      <link href="2020/about-the-former-blog/"/>
+      <url>2020/about-the-former-blog/</url>
+      
+        <content type="html"><![CDATA[<p>本博客目前暂时使用原博客的域名<code>code004.cf</code>，此博客完善后会购买新域名</p><p>旧博客采用Hexo(theme Fluid)搭建，并由Github Pages &amp; Coding Pages提供静态网页部署服务。入口：<a href="https://old.code004.cf/">https://old.code004.cf/</a></p><p>该博客将不再更新，且原文章也不会被放置至此博客。当<code>code004.cf</code>域名到期后（约2021年3月），您将仍可以通过 <a href="https://ed7cu5.coding-pages.com">https://ed7cu5.coding-pages.com</a> 或 <a href="https://16w45d.coding-pages.com">https://16w45d.coding-pages.com</a> 访问原博客</p><a id="more"></a><p><img src="/2020/about-the-former-blog/old-index.png" alt="原博客首页"></p><p>无论是域名到期前还是到期后，旧博客的所有功能（包括浏览量统计、站点搜索、黑暗模式、留言）都将持续运作，但文章将不再更新</p><p>欢迎前往<a href="/routes/">Routes</a>查看本站部署的多线路与之前本人的所有blog</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 公告 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
