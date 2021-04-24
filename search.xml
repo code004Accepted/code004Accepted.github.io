@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>浅谈Minecraft服务器的搭建</title>
+      <link href="2021/building-a-mc-server/"/>
+      <url>2021/building-a-mc-server/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>众所周知，Minecraft分为基岩版BE和Java版JE。二者之间的服务器是相互独立的——即JE和BE有不同的服务器搭建方式，且JE的客户端与BE的服务端不能连接，BE的客户端与JE的服务端也同样无法互相检测。</p><p>JE服务器的优势主要在于可定义性强：有大量非官方的服务端，以及大量插件和mod。而BE的优势则在于其用户并不需要拥有一台电脑，且可以多端同步游戏。JE必须使用电脑上的Java版，而BE则可以跨苹果安卓和Windows Mobile手机，与Xbox 360、Switch、PS4等专用游戏设备，及Windows 10的电脑联机。</p><p><strong>值得注意的是，本文对于JE/BE的服务器搭建教程均不包括Mojang官方的Realms。Realms同样分JE与BE版，且同样不能联机BE与JE。Realms是Mojang官方的付费服务，可以在官网订购。据笔者了解，其价格相较自行搭建服务器更为昂贵（约60元每月），并且在国内的连接并不十分稳定，且无法添加mod及插件，故并不推荐。此外，无论是JE还是BE的Realms均要求参与者全部是正版用户。一定程度上，笔者认为这也决定了国内Realms的小众。</strong></p><h2 id="Java-Edition"><a href="#Java-Edition" class="headerlink" title="Java Edition"></a>Java Edition</h2><p>JE的服务端有许多种。我们先从官方的说起</p><h3 id="Official-JE-Server"><a href="#Official-JE-Server" class="headerlink" title="Official JE Server"></a>Official JE Server</h3><p>当每一个JE的新版本发布时（一般仅限正式版而不包括每周快照），Mojang会在官网同步发布服务端的jar文件，可以在下面的地址下载：<a href="https://www.minecraft.net/download/server">https://www.minecraft.net/download/server</a></p><p>此页面会在每一个正式版发布时更新，从而在笔者写下本文时仅能下载1.16.5版本的服务器jar文件。不过，您可以在官方启动器中“添加版本”处选择您需要的版本，并点击选择框右上角的下载服务端按钮，如下：</p><p>/<em>待补图</em>/</p><p>此外，您也可以在<a href="https://mcversions.net/">MCVersions.net</a>搜索您需要的版本，并点击下方的下载按钮下载。以1.7.10为例：</p><p><img src="/2021/building-a-mc-server/mcversions1.png" alt="MCVersions.net"></p><p><img src="/2021/building-a-mc-server/mcversions2.png" alt="MCVersions.net"></p><p>如上图所示，点击Download Server按钮，即可下载选定版本的服务器jar。值得赞赏的是，该下载链接来自Mojang官网，从而您无需有任何顾虑。</p><p>下载jar文件后，您需要在安装了Java的情况下（检验java是否安装的指令：<code>java -version</code>），前往下载的jar文件存放的目录中，并执行指令：<code>java -jar server.jar</code>（注：若下载的文件名不是<code>server.jar</code>，建议先重命名），此后您会看到jar文件存放的目录（下称<strong><em>服务器目录</em></strong>）中看到<code>eula.txt</code>等文件被生成。</p><p>打开<code>eula.txt</code>文件，将其中的<code>eula=false</code>改为<code>eula=true</code>后再次使用上面的指令即可启动服务器。之所以Mojang要设置此选项（或者可以说是障碍），就是为了确保每一位开服的用户都遵守其最终用户许可协议（End-User License Agreement，缩写EULA）。</p><p>正常情况下，如下图所示（笔者用的是1.12.2的服务端）：</p><p><img src="/2021/building-a-mc-server/server1.png" alt="MCVersions.net"></p><p>JE版所有的服务器无外乎是使用了jvm技术，即Java Virtual Machine，通俗理解就是Java的一个小“虚拟机”。无论JE版的服务器还是客户端其实都是利用了该技术。由此，可能部分较老旧的电脑即使安装了Java也无法正常启动该功能。笔者曾使用的于2015年购买的低配联想笔记本可以正常使用该功能。</p><p>启动后的图形化用户界面（又称GUI，Grafical User Interface）如图所示：</p><p><img src="/2021/building-a-mc-server/server2.png" alt="MCVersions.net"></p><p>其中左上角的Stats显示了服务器对运行服务器的电脑（或云服务器等）的内存、CPU占用情况及服务器响应情况，左下角是在线玩家列表（示例图中因没有玩家在线，列表为空），右侧是服务器运行日志、聊天记录等。您可以在右下角的输入框中输入指令，或以服务器Server身份参与聊天（使用命令<code>say xxx</code>），命令前既可以打<code>/</code>号也可以不打，以下几种用法都是正确且可以正常执行的：</p><figure class="highlight jboss-cli"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs jboss-cli">say 一句话<br><span class="hljs-string">/say</span> 另一句话<br>weather rain<br><span class="hljs-string">/weather</span> <span class="hljs-keyword">clear</span><br></code></pre></div></td></tr></table></figure><p>（注：一般情况下为方便服务器管理人员在自己的客户端中直接执行指令，建议执行命令<code>op xxx</code>（xxx为服主或管理人员用户名）后直接在客户端输入<code>/</code>后执行指令）</p><p>现在请先执行<code>stop</code>以关闭服务器。注意该指令可能只能在服务端执行。</p><p>执行后，服务端将自动执行系列操作：停止服务器（此后在线玩家将被“失去连接”，并且在玩家的多人游戏界面上服务器将“无法被找到”，新玩家将无法加入服务器）、保存当前玩家信息、保存地图，关服（此后服务端的服务器进程将被彻底关闭，前文提及的服务器GUI也会关闭）</p><p>现在，您可以根据系统撰写脚本<code>start.bat</code>/<code>start.cmd</code>（Windows下）或<code>start.sh</code>（Linux下），内容同上：</p><figure class="highlight mipsasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs mipsasm"><span class="hljs-keyword">java </span>-<span class="hljs-keyword">jar </span>server.<span class="hljs-keyword">jar</span><br></code></pre></div></td></tr></table></figure><p>同时，真正进行服务器联机时，为了服务器发挥更好的性能，您可以加入如下选项（可选）：</p><ol><li><code>-nogui</code>，该项可以不启动服务器GUI画面，从而节省服务器内存</li><li><code>-Xms</code>，该项可以定义服务器刚刚启动时占用的内存，建议在中大型服务器中与最大内存设为相同值以加快服务器启动，对于普通用户建议<code>-Xms512M</code>（512MB）或<code>-Xms1G</code>（1GB）就够了。该项不会对长时间服务器运行有性能影响，故也可以不设置</li><li><code>-Xmx</code>，该项可以定义服务器占用的最大内存，一般来说云服务器就直接开最大内存吧，反正收费一样；家用电脑开服的自己协调一下，一般来说1~2GB就够了</li></ol><p>另外，家用电脑开服一般需要内网映射，如果要用同一台电脑上客户端（而且不加mod/插件的）的建议不要用上面的jar文件开服，而是用LanServerProperties的mod直接用客户端开局域网联机，再内网映射。该模组可以解决局域网联机端口不固定（也可以使用<code>/publish xxx</code>来固定在<code>xxx</code>端口开服，如<code>/publish 25565</code>）、不允许非正版用户等设定，会在后面介绍。</p><p>待更，抽时间继续更%</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Minecraft </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何快速在中国互联网走红</title>
+      <link href="2021/going-viral/"/>
+      <url>2021/going-viral/</url>
+      
+        <content type="html"><![CDATA[<p>待更</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 互联网 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
